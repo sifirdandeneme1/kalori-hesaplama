@@ -43,4 +43,11 @@ function removeFood(id){let f=foods.find(x=>x.id===id);if(f&&confirm(`“${f.nam
 function openModal(id){document.getElementById(id).classList.add('open')}function closeModal(id){document.getElementById(id).classList.remove('open')}function backdrop(e,id){if(e.target.id===id)closeModal(id)}function toast(s){let t=document.getElementById('toast');t.textContent=s;t.style.display='block';clearTimeout(t.x);t.x=setTimeout(()=>t.style.display='none',1800)}function esc(s){return s.replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 document.getElementById('today').textContent=new Intl.DateTimeFormat('tr-TR',{weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(new Date());render();
 </script>
-</body></html>
+
+<script>
+const EMBEDDED_KALORI_TOKEN = '__KALORI_SYNC_TOKEN__';
+</script>
+
+<script src="sync.js"></script>
+</body>
+</html>
