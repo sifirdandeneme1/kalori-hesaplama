@@ -1,0 +1,587 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-21T14:13:36.475Z",
+  "foods": [
+    {
+      "id": "d0",
+      "name": "Beyaz ekmek",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 265
+    },
+    {
+      "id": "d1",
+      "name": "Haşlanmış yumurta",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 155
+    },
+    {
+      "id": "d2",
+      "name": "Tereyağlı yumurta",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 200
+    },
+    {
+      "id": "d3",
+      "name": "Beyaz peynir",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 310
+    },
+    {
+      "id": "d4",
+      "name": "Lor peyniri",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 90
+    },
+    {
+      "id": "d5",
+      "name": "Tereyağlı pirinç pilavı",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 194
+    },
+    {
+      "id": "d6",
+      "name": "Salçalı makarna",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 150
+    },
+    {
+      "id": "d7",
+      "name": "Kuru fasulye yemeği",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 130
+    },
+    {
+      "id": "d8",
+      "name": "Barbunya yemeği",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 124
+    },
+    {
+      "id": "d9",
+      "name": "Türlü yemeği",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 75
+    },
+    {
+      "id": "d10",
+      "name": "Zeytinyağlı domates salatası",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 70
+    },
+    {
+      "id": "d11",
+      "name": "Yoğurt",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 61
+    },
+    {
+      "id": "d12",
+      "name": "Kaşar peyniri",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 392
+    },
+    {
+      "id": "d13",
+      "name": "Siyah zeytin",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 5
+    },
+    {
+      "id": "d14",
+      "name": "Tahin",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 595
+    },
+    {
+      "id": "d15",
+      "name": "Bal",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 304
+    },
+    {
+      "id": "d16",
+      "name": "Kakaolu tahin helvası",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 550
+    },
+    {
+      "id": "d17",
+      "name": "Sade dondurma",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 207
+    },
+    {
+      "id": "d18",
+      "name": "Şeftali (orta boy)",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 59
+    },
+    {
+      "id": "d19",
+      "name": "Kayısı (orta boy)",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 17
+    },
+    {
+      "id": "d20",
+      "name": "Üzüm (1 tane)",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 3.5
+    },
+    {
+      "id": "d21",
+      "name": "Yaş incir (orta boy)",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 37
+    },
+    {
+      "id": "d22",
+      "name": "Kuru incir (orta boy)",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 21
+    },
+    {
+      "id": "d23",
+      "name": "Badem",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 7
+    },
+    {
+      "id": "d24",
+      "name": "Fındık",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 9
+    },
+    {
+      "id": "d25",
+      "name": "Kaju",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 9
+    },
+    {
+      "id": "d26",
+      "name": "Tuzlu ayçekirdeği (iç)",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 584
+    },
+    {
+      "id": "d27",
+      "name": "Kabak çekirdeği (iç)",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 559
+    },
+    {
+      "id": "d28",
+      "name": "Şeftali meyve suyu",
+      "unit": "mililitre",
+      "baseAmount": 100,
+      "calories": 54
+    },
+    {
+      "id": "d29",
+      "name": "Kızılay karpuz-çilek maden suyu",
+      "unit": "mililitre",
+      "baseAmount": 100,
+      "calories": 32
+    },
+    {
+      "id": "d30",
+      "name": "Ayran",
+      "unit": "mililitre",
+      "baseAmount": 100,
+      "calories": 37
+    },
+    {
+      "id": "d31",
+      "name": "Sade Türk kahvesi",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 7
+    },
+    {
+      "id": "d32",
+      "name": "Az şekerli Türk kahvesi",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 13
+    },
+    {
+      "id": "d33",
+      "name": "Orta şekerli Türk kahvesi",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 19
+    },
+    {
+      "id": "d34",
+      "name": "Şekerli Türk kahvesi",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 31
+    },
+    {
+      "id": "d35",
+      "name": "Tam yağlı süt",
+      "unit": "mililitre",
+      "baseAmount": 100,
+      "calories": 61
+    },
+    {
+      "id": "d36",
+      "name": "Domates-soğanlı tavuk sote",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 169
+    },
+    {
+      "id": "d37",
+      "name": "Haşlanmış tavuk göğsü",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 165
+    },
+    {
+      "id": "d38",
+      "name": "Tereyağı",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 717
+    },
+    {
+      "id": "d39",
+      "name": "Zeytinyağı",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 884
+    },
+    {
+      "id": "d40",
+      "name": "Sosis",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 300
+    },
+    {
+      "id": "d41",
+      "name": "Patates kızartması",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 312
+    },
+    {
+      "id": "d42",
+      "name": "Et kavurma",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 240
+    },
+    {
+      "id": "d43",
+      "name": "Fırında tavuk (derili)",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 215
+    },
+    {
+      "id": "d44",
+      "name": "Tavada soslu tavuk ızgara",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 190
+    },
+    {
+      "id": "d45",
+      "name": "Tavada sossuz tavuk ızgara",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 165
+    },
+    {
+      "id": "d46",
+      "name": "Mercimek çorbası",
+      "unit": "mililitre",
+      "baseAmount": 100,
+      "calories": 55
+    },
+    {
+      "id": "d47",
+      "name": "Ezogelin çorbası",
+      "unit": "mililitre",
+      "baseAmount": 100,
+      "calories": 50
+    },
+    {
+      "id": "d48",
+      "name": "Tarhana çorbası",
+      "unit": "mililitre",
+      "baseAmount": 100,
+      "calories": 60
+    },
+    {
+      "id": "d49",
+      "name": "Domates çorbası",
+      "unit": "mililitre",
+      "baseAmount": 100,
+      "calories": 45
+    },
+    {
+      "id": "d50",
+      "name": "Tavuk çorbası",
+      "unit": "mililitre",
+      "baseAmount": 100,
+      "calories": 50
+    },
+    {
+      "id": "d51",
+      "name": "Sarı leblebi",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 370
+    },
+    {
+      "id": "d52",
+      "name": "Kuru üzüm",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 304
+    },
+    {
+      "id": "d53",
+      "name": "Şekerli sakız",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 10
+    },
+    {
+      "id": "d54",
+      "name": "Çubuk kraker",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 380
+    },
+    {
+      "id": "d55",
+      "name": "Ülker Halley 30 g",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 132
+    },
+    {
+      "id": "d56",
+      "name": "Ülker Çizi 70 g paket",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 319
+    },
+    {
+      "id": "d57",
+      "name": "Ülker İkram 84 g paket",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 405
+    },
+    {
+      "id": "d58",
+      "name": "Ülker Metro 36 g",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 159
+    },
+    {
+      "id": "d59",
+      "name": "Cornetto Classico Kaymak",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 209
+    },
+    {
+      "id": "d60",
+      "name": "Yarım ekmek tavuk döner",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 440
+    },
+    {
+      "id": "d61",
+      "name": "Simit",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 430
+    },
+    {
+      "id": "d62",
+      "name": "Menemen",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 90
+    },
+    {
+      "id": "d63",
+      "name": "Tereyağlı bulgur pilavı",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 130
+    },
+    {
+      "id": "d64",
+      "name": "Tavuklu patates yemeği",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 155
+    },
+    {
+      "id": "d65",
+      "name": "Tavada köfte",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 250
+    },
+    {
+      "id": "d66",
+      "name": "Izgara köfte",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 200
+    },
+    {
+      "id": "d67",
+      "name": "Mantı (sossuz)",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 190
+    },
+    {
+      "id": "d68",
+      "name": "Kıymalı pide",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 220
+    },
+    {
+      "id": "d69",
+      "name": "Karışık pizza",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 266
+    },
+    {
+      "id": "d70",
+      "name": "Standart hamburger",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 500
+    },
+    {
+      "id": "d71",
+      "name": "Cacık",
+      "unit": "mililitre",
+      "baseAmount": 100,
+      "calories": 45
+    },
+    {
+      "id": "d72",
+      "name": "Muz (orta boy)",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 105
+    },
+    {
+      "id": "d73",
+      "name": "Elma (orta boy)",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 95
+    },
+    {
+      "id": "d74",
+      "name": "Mandalina (orta boy)",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 47
+    },
+    {
+      "id": "d75",
+      "name": "Karpuz",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 30
+    },
+    {
+      "id": "d76",
+      "name": "Çilek",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 32
+    },
+    {
+      "id": "d77",
+      "name": "Erik",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 46
+    },
+    {
+      "id": "d78",
+      "name": "Kavun",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 34
+    },
+    {
+      "id": "d79",
+      "name": "Ülker Çikolatalı Gofret 36 g",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 195
+    },
+    {
+      "id": "d80",
+      "name": "Ülker Albeni 40 g",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 202
+    },
+    {
+      "id": "d81",
+      "name": "Tuzlu yer fıstığı",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 585
+    },
+    {
+      "id": "d82",
+      "name": "Nescafé 3ü1 Arada Sütlü Köpüklü",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 77
+    }
+  ]
+}
