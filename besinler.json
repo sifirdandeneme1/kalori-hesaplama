@@ -582,6 +582,13 @@
       "unit": "adet",
       "baseAmount": 1,
       "calories": 77
+    },
+    {
+      "id": "d83",
+      "name": "Tasak_Kebabi",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 800
     }
   ]
 }
