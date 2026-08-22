@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-22T11:16:02.300Z",
+  "updatedAt": "2026-08-22T13:05:18.705Z",
   "foods": [
     {
       "id": "d0",
@@ -596,6 +596,13 @@
       "unit": "gram",
       "baseAmount": 100,
       "calories": 57
+    },
+    {
+      "id": "u1787403918181",
+      "name": "Adora Bademli Dondurma",
+      "unit": "adet",
+      "baseAmount": 1,
+      "calories": 224
     }
   ]
 }
