@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-22T08:05:39.289Z",
+  "updatedAt": "2026-08-22T11:16:02.300Z",
   "foods": [
     {
       "id": "d0",
@@ -589,6 +589,13 @@
       "unit": "gram",
       "baseAmount": 100,
       "calories": 225
+    },
+    {
+      "id": "u1787397361994",
+      "name": "Armut",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 57
     }
   ]
 }
