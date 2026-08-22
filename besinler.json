@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T14:13:36.475Z",
+  "updatedAt": "2026-08-22T08:05:39.289Z",
   "foods": [
     {
       "id": "d0",
@@ -582,7 +582,13 @@
       "unit": "adet",
       "baseAmount": 1,
       "calories": 77
+    },
+    {
+      "id": "u1787385938938",
+      "name": "Ekici Beyaz Peynir",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 225
     }
-
   ]
 }
