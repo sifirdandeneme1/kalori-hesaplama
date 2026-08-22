@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-22T13:05:18.705Z",
+  "updatedAt": "2026-08-22T13:06:23.679Z",
   "foods": [
     {
       "id": "d0",
@@ -603,6 +603,13 @@
       "unit": "adet",
       "baseAmount": 1,
       "calories": 224
+    },
+    {
+      "id": "u1787403983018",
+      "name": "Üzüm",
+      "unit": "gram",
+      "baseAmount": 100,
+      "calories": 69
     }
   ]
 }
