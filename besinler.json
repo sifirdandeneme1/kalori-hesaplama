@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-25T10:05:11.560Z",
+  "updatedAt": "2026-08-25T15:49:21.443Z",
   "foods": [
     {
       "id": "d0",
@@ -1055,6 +1055,18 @@
         {
           "name": "1 adet",
           "amount": 67
+        }
+      ]
+    },
+    {
+      "id": "u1787672960882",
+      "name": "Patates Türlüsü",
+      "baseUnit": "g",
+      "kcal100": 75,
+      "portions": [
+        {
+          "name": "1 porsiyon",
+          "amount": 200
         }
       ]
     }
