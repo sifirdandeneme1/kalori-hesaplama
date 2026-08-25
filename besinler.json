@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-25T16:10:18.612Z",
+  "updatedAt": "2026-08-25T16:13:27.849Z",
   "foods": [
     {
       "id": "d0",
@@ -1063,6 +1063,18 @@
       "name": "Patates Türlüsü",
       "baseUnit": "g",
       "kcal100": 90,
+      "portions": [
+        {
+          "name": "1 porsiyon",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "id": "u1787674407183",
+      "name": "Marul Havuç Salatası",
+      "baseUnit": "g",
+      "kcal100": 105,
       "portions": [
         {
           "name": "1 porsiyon",
