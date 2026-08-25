@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-25T15:49:21.443Z",
+  "updatedAt": "2026-08-25T16:10:18.612Z",
   "foods": [
     {
       "id": "d0",
@@ -1062,7 +1062,7 @@
       "id": "u1787672960882",
       "name": "Patates Türlüsü",
       "baseUnit": "g",
-      "kcal100": 75,
+      "kcal100": 90,
       "portions": [
         {
           "name": "1 porsiyon",
