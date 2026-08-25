@@ -83,105 +83,24 @@ function kaloriFoodIdFromName(name) {
 }
 
 function kaloriLocalFoodFromRemote(item) {
-    if (!item || typeof item !== 'object') {
-        return null;
+    if (!item || typeof item !== 'object') return null;
+    const prepared = {...item};
+    prepared.id = String(item.id || kaloriFoodIdFromName(item.name));
+    if (!prepared.type && !prepared.baseUnit) {
+        const unit = String(item.unit || '').toLocaleLowerCase('tr');
+        prepared.type = unit === 'mililitre' || unit === 'ml' ? 'ml' : unit === 'adet' || unit === 'paket' ? 'piece' : 'g';
+        prepared.cal = Number(item.calories ?? item.cal);
     }
-
-    const name = String(item.name || '').trim();
-
-    if (!name) {
-        return null;
-    }
-
-    let type = item.type;
-
-    if (!type) {
-        const remoteUnit = String(
-            item.unit || ''
-        ).toLocaleLowerCase('tr');
-
-        if (
-            remoteUnit === 'gram' ||
-            remoteUnit === 'g'
-        ) {
-            type = 'g';
-        } else if (
-            remoteUnit === 'mililitre' ||
-            remoteUnit === 'ml'
-        ) {
-            type = 'ml';
-        } else if (
-            remoteUnit === 'adet' ||
-            remoteUnit === 'paket' ||
-            remoteUnit === 'piece'
-        ) {
-            type = 'piece';
-        }
-    }
-
-    if (!['g', 'ml', 'piece'].includes(type)) {
-        return null;
-    }
-
-    const calories = Number(
-        item.calories ?? item.cal
-    );
-
-    if (!Number.isFinite(calories) || calories <= 0) {
-        return null;
-    }
-
-    const defaultBase =
-        type === 'piece' ? 1 : 100;
-
-    const baseAmount = Number(
-        item.baseAmount ?? defaultBase
-    );
-
-    if (
-        !Number.isFinite(baseAmount) ||
-        baseAmount <= 0
-    ) {
-        return null;
-    }
-
-    let normalizedCalories;
-
-    if (type === 'piece') {
-        normalizedCalories =
-            calories / baseAmount;
-    } else {
-        normalizedCalories =
-            calories * 100 / baseAmount;
-    }
-
-    return {
-        id: String(
-            item.id || kaloriFoodIdFromName(name)
-        ),
-        name: name,
-        type: type,
-        cal: Number(
-            normalizedCalories.toFixed(4)
-        )
-    };
+    return normalizeFood(prepared);
 }
 
 function kaloriRemoteFoodFromLocal(food) {
-    const unit =
-        food.type === 'g'
-            ? 'gram'
-            : food.type === 'ml'
-                ? 'mililitre'
-                : 'adet';
-
     return {
         id: food.id,
         name: food.name,
-        unit: unit,
-        baseAmount:
-            food.type === 'piece' ? 1 : 100,
-        calories: Number(food.cal)
+        baseUnit: food.baseUnit,
+        kcal100: Number(food.kcal100),
+        portions: (food.portions || []).map(p => ({name: p.name, amount: Number(p.amount)}))
     };
 }
 
@@ -224,7 +143,7 @@ function kaloriParseRemoteFoods(text) {
 
 function kaloriCreateRemoteDocument(list) {
     return {
-        version: 1,
+        version: 2,
         updatedAt: new Date().toISOString(),
         foods: list.map(
             kaloriRemoteFoodFromLocal
@@ -421,7 +340,7 @@ async function kaloriPutRemoteFile(
 }
 
 function kaloriSaveFoodsLocally(list) {
-    foods = list;
+    foods = list.map(normalizeFood).filter(Boolean);
 
     localStorage.setItem(
         keyFoods,
@@ -709,36 +628,10 @@ function kaloriInstallSyncHooks() {
 }
 
 function kaloriInstallSyncUi() {
-    const manage =
-        document.querySelector('.manage');
-
-    if (!manage) {
-        return;
-    }
-
-    const button =
-        document.createElement('button');
-
-    button.className =
-        'btn soft wide';
-
-    button.style.marginTop = '10px';
-
-    button.textContent =
-        '🔄 Besin listesini eşitle';
-
-    button.onclick = function () {
-        syncKaloriFoods(true);
-    };
-
     const status =
-        document.createElement('div');
+        document.getElementById('kaloriSyncStatus');
 
-    status.id = 'kaloriSyncStatus';
-    status.style.textAlign = 'center';
-    status.style.fontSize = '12px';
-    status.style.marginTop = '7px';
-    status.style.color = '#6f7d74';
+    if (!status) return;
 
     const oldSync =
         localStorage.getItem(
@@ -762,15 +655,6 @@ function kaloriInstallSyncUi() {
             'Besin listesi henüz eşitlenmedi';
     }
 
-    manage.insertAdjacentElement(
-        'afterend',
-        button
-    );
-
-    button.insertAdjacentElement(
-        'afterend',
-        status
-    );
 }
 
 kaloriInstallSyncHooks();
